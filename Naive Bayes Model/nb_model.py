@@ -139,3 +139,16 @@ print(confusion_matrix(y_test, predicted))
 import pickle
 file_name = 'pipelinemodel'
 pickle.dump(pipeline, open(file_name, 'wb'))
+
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# CONCLUSION
+'''
+in this project we load dataset
+we cleaned it and save to local dir
+then we load cleaned data, and we tokenize, normalize lemmatize, remove stopwords
+then split data to tran and test
+create naive bayes classifier model pipeline and train it
+then we evaluate test data with 74% accuracy
+finally we save model as binary file
+'''
